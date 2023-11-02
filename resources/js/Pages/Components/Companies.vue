@@ -198,10 +198,12 @@ async function openEditModal(item) {
 }
 
 const getLogoUrl = (filename) => {
-  if (!filename.includes("company_logo")) {
-    return filename;
-  } else {
-    return `http://localhost:8000/storage/${filename}`;
+  if(filename) {
+    if (!filename.includes("company_logo")) {
+      return filename;
+    } else {
+      return `http://localhost:8000/storage/${filename}`;
+    }
   }
 };
 </script>

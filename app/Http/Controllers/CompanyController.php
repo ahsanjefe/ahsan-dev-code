@@ -117,6 +117,8 @@ class CompanyController extends Controller
                 $file = $request->file('logo');
                 $path = $file[0]->store('public/company_logos');
                 $validatedData['logo'] = str_replace('public/', '', $path);
+            } else {
+                unset($validatedData['logo']);
             }
     
             // Update the company's attributes with the validated data
