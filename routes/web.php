@@ -30,11 +30,11 @@ Route::get('/dashboard', function () {
 })->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::get('/companies', function () {
-    return Inertia::render('Dashboard');
+    return Inertia::render('Components/Companies');
 })->middleware(['auth', 'verified'])->name('companies');
 
 Route::get('/employees', function () {
-    return Inertia::render('Dashboard');
+    return Inertia::render('Components/Employees');
 })->middleware(['auth', 'verified'])->name('employees');
 
 Route::middleware('auth')->group(function () {

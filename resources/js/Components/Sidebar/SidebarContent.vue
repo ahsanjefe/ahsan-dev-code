@@ -56,7 +56,7 @@ import { TemplateIcon, UserGroupIcon, OfficeBuildingIcon } from '@heroicons/vue/
             </template>
         </SidebarLink>
 
-        <SidebarCollapsible
+        <!-- <SidebarCollapsible
             title="Components"
             :active="route().current('components.*')"
         >
@@ -72,7 +72,7 @@ import { TemplateIcon, UserGroupIcon, OfficeBuildingIcon } from '@heroicons/vue/
                 title="Buttons"
                 :active="route().current('components.buttons')"
             />
-        </SidebarCollapsible>
+        </SidebarCollapsible> -->
 
         <!-- Examples -->
         <!--
